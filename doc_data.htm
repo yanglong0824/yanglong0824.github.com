@@ -44,12 +44,13 @@
                    <a href="#section3" class="list-group-item">三,系统画面</a>
                   <a href="#section4" class="list-group-item">四,采集URL模板定义</a> 
                    <a href="#section5" class="list-group-item">五,采集HTML模板定义</a>
+                   <a href="#section6" class="list-group-item">六,IE二次开发</a>
              </div>
 	     </div>
 	      <div class="col-md-9">
 	         <div id="section1"  class="page-header">
 	           <h3>一,系统简介</h3> 
-	         </div>
+	         </div> 
 	          <h4>1，数据采集，定义采集模版，定时从指定网站中采集数据,并存储于MongoDB中</h4> 
 	          <h4>2，数据分析，从MongoDB中分析挑选出规整的数据，存储于SQL Server中</h4>  
               <h4>3，数据呈现，在数据分析网站中查看数据分析结果果</h4>  
@@ -57,9 +58,10 @@
               <div id="section2" class="page-header">
 	           <h3>二,技术特点</h3> 
 	         </div>
-	         <h4>1，采集灵活方便，可自定义模板采集路径</h4> 
-	         <h4>2，可设置采集时间和采集频率对数据进行采集</h4> 
-	         <h4>3，对MongoDB中数据二次分析后存储于SQL Server中方便查询</h4>  
+	         <h4>1，数据采集引擎灵活方便，可自定义采集路径模板、采集内容模板</h4> 
+	         <h4>2，数据采集引擎可设置采集时间和采集频率对数据进行采集</h4> 
+	         <h4>3，采集数据存储于MongoDB中用于分析，采集过的网站HTML文件存档</h4> 
+	         <h4>4，对MongoDB中数据二次分析后存储于SQL Server中方便查询</h4>  
              <h4> ★ 开发工具及使用技术</h4>
              <pre><code style="font-size:medium"> 
 开发工具：Visual Studio 2010
@@ -165,7 +167,13 @@
 	            <p>Regular path:是否支持正则表达式</p> 
 	            <p>Doc Path:ALL表示对应元素HTML内容、INNER表示对应元素内部HTML内容、PROPERTY表示对应元素的属性值</p>
 	         </div>
-       
+             
+                <div id="section6"  class="page-header">
+	          <h3>六,IE二次开发</h3> 
+	         </div> 
+	          <h4>1，后台程式控制前台JS执行，加载网页</h4> 
+	          <h4>2，根据网页中的元素绝对位置及大小，模糊抓取网页内容，并作分析</h4>  
+              <h4>3，后台程式对网页各个元素进行模拟操作</h4>  
               <div style="height:200px;"><p></p></div>
           </div>
           
